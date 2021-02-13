@@ -33,7 +33,7 @@ body {
 }
 
 .itemContainer {
-    width: max(1024px, 75vw);
+    width: 75vw;
     margin: 25px 0px 25px 0px;
     background-color: white;
     padding: 35px;
@@ -47,10 +47,24 @@ body {
     margin-bottom: 10pt;
 }
 
+.itemDesc {
+    padding: 0px 14px 0px 14px;
+}
+
 .embVid {
-    width: 100%;
+    width: 70vw;
+    margin: auto;
+    padding-top: 16px;
 }
 
 video {
     width: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+video, img {
+    margin-top: 10px;
 }

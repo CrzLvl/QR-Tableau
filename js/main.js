@@ -1,4 +1,4 @@
-import {select, csv} from './d3.min'
+import {select, csv} from './d3.min.js'
 
 const svg = select('svg');
 

@@ -3,13 +3,13 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nick Rossi | Technical Specialist</title>
+    <title>Nick Rossi | Technical Specialist with Graphic Design and Data Visualisation Experience</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="js/d3.min.js"></script>
-    <script type="module" src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.19.1/build/vega.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0/build/vega-lite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.15.1/build/vega-embed.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300i,400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,15 +17,18 @@
         <div id="header">
             <div id="headerTitle">Nick Rossi</div>
             <div id="headerSub">Technical Specialist with Graphic Design and Data Visualisation Experience</div>
+            <div id="contactDetails" style="opacity:0.75"><svg id="ae940823-00a2-4b5b-a7d9-31e9c509ec26" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.8 15.4"><path d="M1228.65,730.68h-5.6a2.1,2.1,0,0,0-2.1,2.1V744a2.1,2.1,0,0,0,2.1,2.1h5.6a2.09,2.09,0,0,0,2.1-2.1v-11.2A2.09,2.09,0,0,0,1228.65,730.68Zm-1.4,14h-2.8V744h2.8Zm2.28-2.1h-7.35v-9.8h7.35Z" transform="translate(-1220.95 -730.68)" style="fill:#fff"/></svg>0458 368 844 | <svg id="b7dfa8f7-963d-4616-9e11-d1670d4ca348" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 11.2"><path d="M1231.45,732.78h-11.2a1.4,1.4,0,0,0-1.39,1.4v8.4a1.4,1.4,0,0,0,1.4,1.4h11.2a1.4,1.4,0,0,0,1.4-1.4v-8.4A1.4,1.4,0,0,0,1231.45,732.78Zm0,2.8-5.6,3.5-5.6-3.5v-1.4l5.6,3.5,5.6-3.5Z" transform="translate(-1218.85 -732.78)" style="fill:#fff"/></svg><a href="mailto:nick.rossi@hotmail.com.au" style="color: white">nick.rossi@hotmail.com.au</a></div>
         </div>
         <div class="bodyContent">
             <div class="itemContainer">
                 <div class="itemHeader">Queensland Rail Network Map</div>
                 <div class="itemDesc">
                     <ul>
-                        <li>Created in Tableau Public.</li>
-                        <li>Created in Tableau Public.</li>
+                        <li>Created in <a href="https://www.tableau.com/" target="_blank" rel="noreferrer noopener"><b>Tableau Public</b></a>.</li>
+                        <li>Geographical data prepared based on <a href="https://gtfsrt.api.translink.com.au/" target="_blank" rel="noreferrer noopener"><b>TransLink GTFS Real-Time Feed</b></a>.</li>
+                        <li>Ride time data prepared based on <a href="https://jp.translink.com.au/plan-your-journey/timetables/train" target="_blank" rel="noreferrer noopener"><b>TransLink Train Timetables</b></a>.</li>
                     </ul>
+                    This project demonstrates familiarity with Tableau, including preparing, importing, displaying and designing data, sheets and dashboards. Each line is coloured as per the officially designated line colours for improved readability. Line geographical shapes and their associated properties (line name, ride time, etc.) are represented in a <a href="https://en.wikipedia.org/wiki/GeoJSON" target="_blank" rel="noreferrer noopener"><b>GeoJSON</b></a> file sizing in at 702 KB, resulting in quick loading and rendering.
                 </div>
                 <div class="embVid">
                     <video controls>
@@ -37,8 +40,29 @@
                 </div>
             </div>
             <div class="itemContainer">
+                <div class="itemHeader">TravelTrain Patronage Graph</div>
+                <div class="itemDesc">
+                    <ul>
+                        <li>Created with <a href="https://vega.github.io/vega-lite/" target="_blank" rel="noreferrer noopener"><b>Vega-Lite</b></a>, built upon <a href="https://d3js.org/" target="_blank" rel="noreferrer noopener"><b>D3.js</b></a>.</li>
+                        <li>Rendered within the browser as the page is loaded.</li>
+                    </ul>
+                    The creation and implemention of dynamic, interactive data visualistions in web browsers allows stakeholders to engage with data and storytelling. This project demonstrates knowledge of web-based data visualisation, including knowledge of HTML, CSS and JS. This page was coded without the use of templates.
+                </div>
+                <div class="embVid">
+                    <div id="patronageGraph"></div>
+                    <div class="dataAtt">Data sourced from: <a
+                            href="https://www.data.qld.gov.au/dataset/traveltrain-patronage" target="_blank" rel="noreferrer noopener">Queensland Government Open Data Portal</a></div>
+                </div>
+            </div>
+            <div class="itemContainer">
                 <div class="itemHeader"><i>What Is This Plane Doing?</i> Video</div>
-                <div class="itemDesc">Queensland Rail Network Map</div>
+                <div class="itemDesc">
+                    <ul>
+                        <li>Created using software from the <a href="https://www.adobe.com/au/creativecloud.html" target="_blank" rel="noreferrer noopener"><b>Adobe Creative Cloud</b></a> Suite.</li>
+                        <li>Flight data sourced from online ADS-B sources, prepared for After Effects via various scripts running <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer noopener"><b>Node.js</b></a>.</li>
+                    </ul>
+                    asdfasdf
+                </div>
                 <div class="embVid">
                     <a href="https://www.youtube.com/watch?v=FFI0h-qapy4" target="_blank" rel="noreferrer noopener"><img src="media/WITPD_Thumb.jpg" alt="'What Is This Plane Doing?' video thumbnail"></a>
                 </div>
@@ -46,3 +70,5 @@
         </div>
     </div>
 </body>
+
+<script src="js/main.js"></script>

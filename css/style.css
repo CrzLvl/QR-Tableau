@@ -63,8 +63,23 @@ video {
 
 img {
     width: 100%;
+    user-select: none;
 }
 
 video, img {
     margin-top: 10px;
+}
+
+#patronageGraph {
+    width: 100%;
+    height: 30vw;
+}
+
+#vg-tooltip-element {
+    font-size: 12pt;
+}
+
+#contactDetails > svg {
+    height: 10px;
+    margin-right: 5px;
 }

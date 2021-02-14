@@ -57,6 +57,14 @@ body {
     padding-top: 16px;
 }
 
+.flexRow > .imgDesc > img {
+    max-width:35vw;
+    max-height:30vw;
+    width: auto;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+}
+
 video {
     width: inherit;
 }
@@ -82,4 +90,13 @@ video, img {
 #contactDetails > svg {
     height: 10px;
     margin-right: 5px;
+}
+
+.flexRow {
+    display:flex;
+    justify-content: space-between;
+}
+
+.imgDesc.mrg {
+    margin-right: 10px;
 }

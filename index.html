@@ -9,6 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5.19.1/build/vega.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0/build/vega-lite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.15.1/build/vega-embed.min.js"></script>
+    <script src='js/svg-pan-zoom.js'></script>
+    <script src="js/qrMapData.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
 </head>
 
@@ -37,6 +39,21 @@
 
                         Sorry, your browser doesn't support embedded videos.
                     </video>
+                </div>
+            </div>
+            <div class="itemContainer">
+                <div class="itemHeader">Interactive Citytrain Network Map</div>
+                <div class="itemDesc">
+                    <ul>
+                        <li>Map data sourced from <a href="https://jp.translink.com.au/plan-your-journey/timetables/train" target="_blank" rel="noreferrer noopener"><b>TransLink train timetables</b></a> with map image data processing in <a href="https://www.adobe.com/au/products/illustrator.html" target="_blank" rel="noreferrer noopener"><b>Adobe Illustrator</b></a>.</li>
+                        <li>All map interactivity coded in <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer noopener"><b>VS Code</b></a>.</li>
+                    </ul>
+                    This interactive map shows the power of web-based solutions and my familiarity with them. Try hovering your mouse over different lines, stations and labels. You can zoom and pan the view around the network map. Hovering your mouse over a shared station (e.g. Eagle Junction, Darra, South Brisbane, etc.) will show all lines which visit that station. Hovering your mouse over an inner city line will show both branches. For example, hovering your mouse over the inner city red line will show both Beenleigh and Ferny Grove lines).
+                </div>
+                <div class="embVid">
+                    <div id="svgContainer">
+                        <object id="qrMap" data="media/QR Map.svg" type="image/svg+xml"></object>
+                    </div>
                 </div>
             </div>
             <div class="itemContainer">
